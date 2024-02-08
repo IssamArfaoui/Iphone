@@ -1,0 +1,77 @@
+
+
+
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,auto)); */
+}
+
+.parent {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,auto)); */
+    display: flex;
+    gap: 30px;
+    /* background-color: red; */
+}
+.child-1 {
+    width: fit-content;
+    text-align: center;
+    background-color: gold;
+    
+}
+.child-1 img {
+    width: 150px;
+}
+.child-1 .images {
+    background-color: white;
+    
+}
+.child-1 .images img {
+    width: 40px;
+}
+.child-2 {
+    padding: 10px;
+}
+.child-2 .size {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.child-2 .size span {
+    padding: 10px;
+    border: 1px solid rgb(5, 205, 5);
+    cursor: pointer;
+}
+.child-2 .btn button {
+    /* margin-top: 10px; */
+    padding: 12px;
+    margin-right: 3px;
+    border: none;
+    background-color: rgb(24, 165, 170);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.child-2 .btn button:last-child {
+    background-color: rgb(116, 43, 43);
+}
+.child-2 input {
+    margin: 10px;
+    width: 30px;
+}
+@media (max-width: 767px) {
+    .parent {
+        display: block;
+        
+    }
+    .parent .child-1 {
+        margin: 0 auto;
+    }
+
+}
