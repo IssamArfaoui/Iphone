@@ -73,5 +73,7 @@ body {
     .parent .child-1 {
         margin: 0 auto;
     }
-
+    .child-2 .btn {
+        text-align: center;
+    }
 }
